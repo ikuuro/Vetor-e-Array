@@ -17,35 +17,41 @@ public class ArrayListFrutas{
         ArrayList<String> frutas = new ArrayList<>();
 
         
-        frutas.add("Maçã");
-        frutas.add("Banana");
-        frutas.add("Laranja");
-        frutas.add("Manga");
+        frutas.add("Caqui");
         frutas.add("Uva");
+        frutas.add("Carambola");
+        frutas.add("Banana");
+        frutas.add("Uva verde");
 
         
+
         
          // listando as frutas
         System.out.println("Lista de frutas: " + frutas);
         
         
+
         // removendo a terceira fruta, índice 2, contagem começa do zero)
         frutas.remove(2);
+
+
 
        
         System.out.println("Lista de frutas após remoção: " + frutas);
 
 
+
+
        
-        String frutaParaBuscar = "Banana";
+        String frutaBuscar = "Banana";
         
         
-        boolean encontrada = buscarFruta(frutas, frutaParaBuscar);
+        boolean encontrada = buscarFruta(frutas, frutaBuscar);
 
         if (encontrada) {
-            System.out.println(frutaParaBuscar + " está na lista.");
+            System.out.println(frutaBuscar + " está na lista.");
         } else {
-            System.out.println(frutaParaBuscar + " não etsa na lista.");
+            System.out.println(frutaBuscar + " não etsa na lista.");
         }
     }
 
